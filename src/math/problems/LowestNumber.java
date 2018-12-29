@@ -16,19 +16,17 @@ public class LowestNumber {
 
 		//find lowest number from the array
 
-		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
-		List<String> lowestValue = new ArrayList<String>();
-		try {
-			connectToSqlDB.insertDataFromArrayToSqlTable(array, "tbl_lowestNumber", "column_lowestNumber");
-			lowestValue = connectToSqlDB.readDataBase("tbl_lowestNumber", "column_lowestNumber");
 
-		} catch (Exception e) {
-			e.printStackTrace();
+		int sum = array[0];
+
+		for (int i = 1; i < array.length; i++) {
+
+
+			if (array[i] < sum) {
+				sum = array[i];
+			}
 		}
-		System.out.println("Data is reading from the Table (tbl_primenumber) and displaying to the console");
-		for(String st:lowestValue){
-			System.out.println(st);
-		}
+		System.out.println(sum);
 	}
 
 }

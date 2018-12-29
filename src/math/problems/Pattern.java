@@ -8,8 +8,30 @@ public class Pattern {
 		 *
 		 *
 		 */
-		
 
 
+
+
+
+
+
+		int count = 1, a = 0;
+		int num = 100;
+		List<String> storePattern = new ArrayList<>();
+		int[] array = new int[40];
+
+		while (num > 0) {
+			for (int i = 0; i < 10; i++) {
+				System.out.print(" " + num);
+				array[a] = num;
+				num -= count;
+				a++;
+
+			}
+			count++;
+		}
+		System.out.println(" ");
 	}
+
+
 }

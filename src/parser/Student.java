@@ -21,14 +21,17 @@ public class Student implements Serializable {
 		this.id = id;
 	}
 	public String getFirstName() {
+
 		return firstName;
 	}
 
 	public void setFirstName(String firstName) {
+
 		this.firstName = firstName;
 	}
 
 	public String getLastName() {
+
 		return lastName;
 	}
 
@@ -37,18 +40,22 @@ public class Student implements Serializable {
 	}
 
 	public String getScore() {
+
 		return score;
 	}
 
 	public void setScore(String score) {
+
 		this.score = score;
 	}
 
 	public String getId() {
+
 		return id;
 	}
 
 	public void setId(String id) {
+
 		this.id = id;
 	}
 
